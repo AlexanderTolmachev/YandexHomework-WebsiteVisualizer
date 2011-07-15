@@ -1,3 +1,5 @@
+// javascript for tree toggle
+
 function tree_toggle(event) {
 	event = event || window.event
 	var clickedElem = event.target || event.srcElement
