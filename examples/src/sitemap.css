@@ -1,0 +1,105 @@
+
+/* Stylysheet for CSS tree */
+
+.NodeContainer {
+    padding: 0;
+    margin: 0;
+}
+
+.NodeContainer li {
+    list-style-type: none;
+}
+
+
+
+/* Indent for all tree children excepts root */
+.SitemapNode {
+    background-image : url(img/i.gif);
+    background-position : top left;
+    background-repeat : repeat-y;
+    margin-left: 18px;
+    zoom: 1;
+}
+
+.Root {
+    margin-left: 0;
+    background-image : none;
+}
+
+
+/* Left vertical line (grid) for all nodes */
+.LastChild {
+    background-image: url(img/i_half.gif);
+    background-repeat : no-repeat;
+}
+ 
+.ExpandOpen .Expand {
+    background-image: url(img/expand_minus.gif);
+}
+ 
+.ExpandClosed .Expand {
+    background-image: url(img/expand_plus.gif);
+}
+ 
+.ExpandLeaf .Expand {
+    background-image: url(img/expand_leaf.gif);
+}
+
+.Content {
+    min-height: 18px;
+    margin-left:18px;
+}
+
+* html  .NodeContent {
+    height: 18px; 
+}
+
+.Expand {
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+
+.ExpandOpen .NodeContainer {
+	display: block;
+}
+
+.ExpandClosed .NodeContainer {
+	display: none;
+}
+
+.ExpandOpen .Expand, .ExpandClosed .Expand {
+	cursor: pointer;
+}
+.ExpandLeaf .Expand {
+	cursor: auto;
+}
+
+/* Stylesheet for sitemap imaging */
+body{
+	margin-top:40px;
+	margin-left:100px;
+}
+
+h1{
+    color: #06C;
+    font-family: "Garamond", serif;
+}
+
+.SitemapTree{
+	margin: 20px;
+    background: DAF9DD;
+    border: 3px solid #228B22;
+    padding: 10px
+}
+
+.Headline_level_1{
+    color: #900;
+    font-size: 20px
+}
+	
+.Headline_level_2{
+    color: #900;
+    font-size: 16px
+}
