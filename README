@@ -1,0 +1,21 @@
+This is WebsiteVisualizer - opensourse application for creating sitemap of a website, which was developed as Yandex hamework.
+It is written in Python 2.7. Also it uses additional thisr-party libraries - lxml (http://lxml.de/) and markup.py (http://markup.sourceforge.net/). 
+
+You may launch this application with the help of Python interpreter, or, if needed, you may build an executable frome sourse code with the help of some special tools, for example with PyInstaller (http://www.pyinstaller.org/). You also need to install lxml library. You may download it from its official website, which link is above. Markup.py is a single Python module, so it doesn't require any installation. It's added to repository, but you may also download it from the link above.
+
+It a console application so the usage is the following:
+website_visualizer.py <site address> <output file name> [<depth limit>]
+
+Parametrs:
+<site adress> --      url of a website, map of which you want to get
+<output file name> -- name of an output HTML-file
+<depth limit> --      this parametr restricts the depth of a sitemap tree
+                      (depth of a website page is a number of clicks that you
+                      need to do in order to reach this page from the website 
+                      home page).It is an optional parametr, but it's highly 
+                      recommended to set it in order to get a quite readable 
+                      sitemap and restrict the time of website crawling if the 
+                      visualized website is big enough.
+                      0 also means no depth restriction.
+                      
+The result will be a HTTML-file with a sitemap of a given website
