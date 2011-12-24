@@ -3,7 +3,7 @@ It is written in Python 2.7. Also it uses additional thisr-party libraries - lxm
 
 You may launch this application with the help of Python interpreter, or, if needed, you may build an executable from sourse code with the help of some special tools, for example with PyInstaller (http://www.pyinstaller.org/). You also need to install lxml library. You may download it from its official website, which link is above. Markup.py is a single Python module, so it doesn't require any installation. It's added to repository, but you may also download it from the link above.
 
-It a console application so the usage is the following:
+It is a console application so the usage is the following:
 website_visualizer.py <site address> <output file name> [<depth limit>]
 
 Parametrs:
